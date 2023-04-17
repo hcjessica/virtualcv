@@ -1,0 +1,127 @@
+.font_quince_bold{
+
+	font-size: 15px;
+	font-weight: bold;
+
+}
+
+.font_catorce_bold{
+
+	font-size: 14px;
+	font-weight: bold;
+
+}
+
+.font_veintidos_bold{
+
+	font-size: 22px;
+	font-weight: bold;
+
+}
+
+.font_dieciseis{
+
+	font-size: 16px;
+
+}
+
+.text_align{
+
+	text-align: center;
+
+}
+
+.text_justify{
+
+	text-align: justify;
+
+}
+
+.padding_veintidos{
+
+	padding: 22px;
+
+}
+
+.padding_bottom_cero{
+
+	padding-bottom: 0;
+
+}
+
+.padding_izq_veintidos{
+
+	padding-left: 22px;
+
+}
+
+.padding_izq_siete{
+
+	padding-left: 7px;
+
+}
+
+.padding_izq_diecisiete{
+
+	padding: 0 17px;
+
+}
+
+.padding_bottom_veintidos{
+	
+	padding-bottom: 22px;
+
+}
+
+.margin_bottom_cero{
+
+	margin-bottom: 0;
+
+}
+
+.margin_cero{
+
+	margin: 0;
+
+}
+
+.line_height_cero_cinco{
+
+	line-height: 0.5;
+	
+}
+
+.line_height_cero{
+
+	line-height: 0;
+
+}
+
+.line_height_uno{
+
+	line-height: 1;
+
+}
+
+
+.font_family_contrail_one{
+	
+	font-family: 'Contrail One', cursive;
+
+}
+
+.border_radius{
+
+	border-radius: 10px;
+}
+
+.sombra_rojizo_oscuro:hover{
+	
+	background-color: #E5153D; 
+
+}
+
+.cursor_mano{
+
+	cursor: pointer;
+}
