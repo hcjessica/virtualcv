@@ -1,0 +1,55 @@
+.fondoGris {
+    width: calc(100% - 337px);
+}
+/*Sección Portada*/
+.sectionPortada{
+    background-position: top;   
+    padding-right: 60px; 
+}
+/*Sección Sobre mí*/
+.sectionSobreMi{
+    align-items: center;
+}
+.sectionSobreMi__titulo{
+    width: 100%;
+}
+.contenido__sobreMi{
+    width: 90%;
+}
+/*Sección Experiencia Laboral*/
+.sectionExperienciaLaboral{
+    align-items: center;
+}
+.sectionExperienciaLaboral__titulo{
+    width: 100%;
+}
+.sectionExperienciaLaboral__card{
+    flex-wrap: nowrap;
+    width: 90%;
+}
+/*Sección Habilidades*/
+.sectionHabilidades__subtitulo{
+    width: 90%;
+}
+.sectionHabilidades__profesionales,
+.sectionHabilidades_personales{
+    width: 90%;
+}
+/*Sección Software*/
+.sectionSoftware__software{
+    width: 90%;
+}
+/*Sección de certificados*/
+.sectionCertificados__card{
+    flex-wrap: nowrap;
+    width: 90%;
+}
+.sectionContacto{
+    align-items: center;
+}
+.sectionContacto__titulo{
+    width: 100%;
+}
+.bloque__contactame{
+    width: 90%;
+}
