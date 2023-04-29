@@ -142,7 +142,7 @@ body{
 /*Secciones*/
 .main{  
 }
-/*Btn desliza al final*/
+/*Btn subir y wsp al final*/
 .btnSubir{
     position: fixed;
     bottom: 70px;
@@ -200,7 +200,7 @@ body{
     padding: 10px;
 }
 .sectionPortada__Presentacion:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 .sectionPortada--Presentacion_h5{
     margin: 0;
