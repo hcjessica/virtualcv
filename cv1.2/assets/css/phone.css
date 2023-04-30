@@ -643,6 +643,11 @@ body{
     border-radius: 12%;
     box-shadow: -3px 3px 14px var(--secondary-color);
 }
+.sectionHabilidades__profesionales figcaption:hover{
+    background-color: var(--forty-color);
+    color: var(--secondary-color);
+    cursor: default;
+}
 .sectionHabilidades_personales{
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
@@ -662,6 +667,11 @@ body{
     border: 4px solid white;
     border-radius: 12%;
     box-shadow: -3px 3px 14px var(--secondary-color);
+}
+.sectionHabilidades_personales p:hover{
+    background-color: var(--forty-color);
+    color: var(--secondary-color);
+    cursor: default;
 }
 /*Sección de idiomas*/
 .sectionIdiomas{
@@ -786,6 +796,11 @@ body{
     border: 4px solid white;
     border-radius: 12%;
     box-shadow: -3px 3px 14px var(--secondary-color);
+}
+.sectionSoftware__software-img figcaption:hover{
+    background-color: var(--forty-color);
+    color: var(--secondary-color);
+    cursor: default;
 }
 /*Sección de certificados*/
 .sectionCertificados{
