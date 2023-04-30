@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Curriculum Vitae</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Web page of my curriculum vitae">
+	<meta name="robots" content="index, follow">
+	<meta name="keywords" content="web page, curriculum vitae, software developer, personal branding">
+	<meta name="author" content="Huancollo Chambi Fabiola Jessica">
+	<link rel="shortcut icon" href="../assets/img/logo-hcjessica.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+	<link rel="stylesheet" href="../assets/css/phone.css" media="screen and (min-width: 300px)">
+	<link rel="stylesheet" href="../assets/css/tablet.css" media="screen and (min-width: 768px)">
+	<link rel="stylesheet" href="../assets/css/desktop.css" media="screen and (min-width: 1200px)">
+</head>
+<body>
+    <header class="header" >
+        <nav class="navDesktop" hidden>
+            <ul class="navmenuDesktop">
+                <li class="navmenuDesktop__opcion">Home</li>
+                <li class="navmenuDesktop__opcion">About me</li>
+                <li class="navmenuDesktop__opcion">Download CV</li>
+                <li class="navmenuDesktop__opcion">Work Experience</li>
+                <li class="navmenuDesktop__opcion">Academic Training</li>
+                <li class="navmenuDesktop__opcion">Skills</li>
+                <li class="navmenuDesktop__opcion">Software</li>
+                <li class="navmenuDesktop__opcion">Languages</li>
+                <li class="navmenuDesktop__opcion">Certificates</li>
+                <li class="navmenuDesktop__opcion">Publications</li>
+                <!-- <li class="navmenuDesktop__opcion">Recomendations</li> -->
+                <li class="navmenuDesktop__opcion">Contact</li>
+                <li class="navmenuDesktop__idioma"></li><!---Img de US-->
+            </ul>
+        </nav>
+        <nav class="navMobile">
+            <button class="navMobile__btnDespliegue" onclick="abrirMenuLateral();">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M103 844v-94h754v94H103Zm0-221v-94h754v94H103Zm0-221v-95h754v95H103Z"/></svg>
+            </button>
+        </nav>
+    </header>
+    <div class="contenedor__menuLateral" hidden="">
+        <div class="menuLateral">
+            <ul class="navMenuMobile">
+                <li class="navMenuMobile__cerrar">
+                    <span onclick="cerrarMenuLateral();">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+                    </span>
+                </li>
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionPortada">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionSobreMi">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>About me</p>
+                    </a>
+                </li>
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionDatosComplementarios">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Download CV</p>
+                    </a>
+                </li>
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionExperienciaLaboral">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Work Experience</p>
+                    </a>
+                </li>
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionFormacionAcademica">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Academic Training</p>
+                    </a>                    
+                </li>
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionHabilidades">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Skills</p>
+                    </a>
+                </li>                
+                <li class="navMenuMobile__opcion" href="#sectionIdiomas">
+                    <a href="#sectionIdiomas">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Languages</p>
+                    </a>
+                </li>
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionSoftware">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Software</p>
+                    </a>
+                </li>
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionCertificados">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Certificates</p>
+                    </a>
+                </li>
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionPosts">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Publications</p>
+                    </a>
+                </li>
+                <!--<li class="navMenuMobile__opcion">
+                    <a href="#sectionRecomendaciones">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Recomendaciones</p>
+                    </a>
+                </li>-->
+                <li class="navMenuMobile__opcion">
+                    <a href="#sectionContacto">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 96 960 960" width="36"><path d="M400 776V376l200 200-200 200Z"/></svg>
+                        <p>Contact</p>
+                    </a>
+                </li>
+                <li class="navMenuMobile__opcion navMenuMobile__idioma">
+                    <a href="../es/index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 96 960 960" width="38"><path d="M480 976q-84 0-157-31.5T196 859q-54-54-85-127.5T80 574q0-84 31-156.5T196 291q54-54 127-84.5T480 176q84 0 157 30.5T764 291q54 54 85 126.5T880 574q0 84-31 157.5T764 859q-54 54-127 85.5T480 976Zm0-58q35-36 58.5-82.5T577 725H384q14 60 37.5 108t58.5 85Zm-85-12q-25-38-43-82t-30-99H172q38 71 88 111.5T395 906Zm171-1q72-23 129.5-69T788 725H639q-13 54-30.5 98T566 905ZM152 665h159q-3-27-3.5-48.5T307 574q0-25 1-44.5t4-43.5H152q-7 24-9.5 43t-2.5 45q0 26 2.5 46.5T152 665Zm221 0h215q4-31 5-50.5t1-40.5q0-20-1-38.5t-5-49.5H373q-4 31-5 49.5t-1 38.5q0 21 1 40.5t5 50.5Zm275 0h160q7-24 9.5-44.5T820 574q0-26-2.5-45t-9.5-43H649q3 35 4 53.5t1 34.5q0 22-1.5 41.5T648 665Zm-10-239h150q-33-69-90.5-115T565 246q25 37 42.5 80T638 426Zm-254 0h194q-11-53-37-102.5T480 236q-32 27-54 71t-42 119Zm-212 0h151q11-54 28-96.5t43-82.5q-75 19-131 64t-91 115Z"/></svg>
+                        <p>ESP</p>
+                    </a>
+                </li>
+            </ul>
+        </div> 
+        <div class="fondoGris"></div>
+    </div>     
+    <main class="main">  
+        <a class="btnSubir animate__animated animate__infinite animate__slow animate__pulse" href="#sectionPortada">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m283 711-43-43 240-240 240 239-43 43-197-197-197 198Z"/></svg>
+        </a>   
+        <a href="https://wa.link/nf3jga" target="_blank">
+            <figure class="contenedorWsp">
+                <img src="../assets/img/enlace-logo-whatsapp.png" alt="To send me a message on Whatsapp" class="contenedorWsp__logo animate__animated animate__infinite animate__slow animate__pulse">
+            </figure>  
+        </a>
+        <section class="sectionPortada" id="sectionPortada"> 
+            <div class="sectionPortada__Presentacion">
+                <h5 class="sectionPortada--Presentacion_h5 animate__animated animate__slideInUp">Hi, I'm</h5>
+                <h1 class="sectionPortada--Presentacion_h1 animate__animated animate__infinite animate__slow animate__pulse">Jessica</h1>
+                <h2 class="sectionPortada--Presentacion_h2 animate__animated animate__backInDown">Backend and Frontend <br>Developer</h2>
+                <figure class="redesSociales">
+                    <a href="https://www.facebook.com/hcjessica31" class="redesSociales__enlace">
+                        <img src="../assets/img/enlace-logo-facebook.jpg" alt="Visit my Facebook" class="redesSociales--enlace_img">
+                    </a>
+                    <a href="https://www.instagram.com/hcjessica31/" class="redesSociales__enlace">
+                        <img src="../assets/img/enlace-logo-instagram.jpg" alt="Visit my Instagram" class="redesSociales--enlace_img">
+                    </a>
+                    <a href="https://twitter.com/hcjessica31" class="redesSociales__enlace">
+                        <img src="../assets/img/enlace-logo-twitter.jpg" alt="Visit my Twitter" class="redesSociales--enlace_img">
+                    </a>
+                    <a href="https://www.linkedin.com/in/fabiola-jessica-huancollo-chambi-9b8904ba/" class="redesSociales__enlace">
+                        <img src="../assets/img/enlace-logo-linkedin.jpg" alt="Visit my Linkedin" class="redesSociales--enlace_img">
+                    </a>
+                    <a href="https://github.com/hcjessica/" class="redesSociales__enlace">
+                        <img src="../assets/img/enlace-logo-github.jpg" alt="Visit my Github" class="redesSociales--enlace_img">
+                    </a>
+                    <a href="https://hcjessica.blogspot.com/" class="redesSociales__enlace">
+                        <img src="../assets/img/enlace-logo-www.jpg" alt="Visit my Blog" class="redesSociales--enlace_img">
+                    </a>
+                </figure>
+            </div>
+        </section>  
+        <section class="sectionSobreMi" id="sectionSobreMi">
+            <a class="btnDeslizar animate__animated animate__infinite animate__slow animate__pulse" href="#sectionContacto">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M480 711 240 471l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+            </a>  
+            <h3 class="sectionSobreMi__titulo">About me</h3>
+            <div class="contenido__sobreMi">
+                <p class="descripcionSobreMi__texto"><strong>Junior Developer with experience in Backend</strong> (PHP, Python) <strong>and Frontend</strong> (JS, HTML, CSS); with skills: responsibility, commitment, constant learning, perseverance, creativity in which it is reflected through innovative ideas in the organization where I work, contributing to its growth and good development.</p>
+                <figure class="imagenSobreMi">
+                    <img src="../assets/img/sobremi-foto.jpg" alt="My photo for this section: about me" class="imagenSobreMi__img">
+                </figure>
+            </div>
+        </section>        
+        <section class="sectionDatosComplementarios" id="sectionDatosComplementarios">
+            <div class="masInformacion">
+                <div class="masInformacion__fondo">
+                    <div class="masInformacion__ventana">
+                        <dl class="masInformacion__lista">
+                            <dt class="masInformacion--lista_dt">Experience Time:</dt>
+                            <dd class="masInformacion--lista_dd">5 years</dd>
+                            <dt class="masInformacion--lista_dt">Age:</dt>
+                            <dd class="masInformacion--lista_dd">27 years</dd>
+                            <dt class="masInformacion--lista_dt">Email:</dt>
+                            <dd class="masInformacion--lista_dd">hcjessica@outlook.com</dd>
+                            <dt class="masInformacion--lista_dt">Freelance Status:</dt>
+                            <dd class="masInformacion--lista_dd">Available</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="masInformacion__rectangulo1"></div>
+                <div class="masInformacion__rectangulo2"></div>
+            </div>
+            <div class="descarga">
+                <p class="descarga__texto">Download CV:</p>
+                <button class="descarga__btn" onclick="descargarCV();">Click here 
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M220 896q-24 0-42-18t-18-42V693h60v143h520V693h60v143q0 24-18 42t-42 18H220Zm260-153L287 550l43-43 120 120V256h60v371l120-120 43 43-193 193Z"/></svg>
+                    </span>
+                </button>
+            </div>
+        </section>        
+        <section class="sectionExperienciaLaboral" id="sectionExperienciaLaboral">
+            <h4 class="sectionExperienciaLaboral__titulo">Work Experience</h4>
+            <div class="sectionExperienciaLaboral__card">
+                <figure class="sectionExperienciaLaboral__imagen">
+                    <img src="../assets/img/logo-hcjessica.png" alt="Employer logo" class="sectionExperienciaLaboral--imagen_img">
+                </figure>
+                <div class="sectionExperienciaLaboral__info">
+                    <p class="sectionExperienciaLaboral--info_tiempo">06/2022 – Currently</p>
+                    <p class="sectionExperienciaLaboral--info_cargo">Freelance</p>
+                    <ul class="sectionExperienciaLaboral--info_tareas">
+                        <li>Web software development (PHP) and user training.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sectionExperienciaLaboral__card">
+                <figure class="sectionExperienciaLaboral__imagen">
+                    <img src="../assets/img/logo-instituto-arzobispoloayza.png" alt="Company logo" class="sectionExperienciaLaboral--imagen_img">
+                </figure>
+                <div class="sectionExperienciaLaboral__info">
+                    <p class="sectionExperienciaLaboral--info_tiempo">01/2021 – 03/2022</p>
+                    <p class="sectionExperienciaLaboral--info_cargo">System Programmer</p>
+                    <p class="sectionExperienciaLaboral--info_empresa">Arzobispo Loayza SAC Corporation, Lima – Peru.</p>
+                    <ul class="sectionExperienciaLaboral--info_tareas">
+                        <li>Development and support of the company's applications: Intranet for students and the SIGA web application for administrators (CodeIgniter, PHP).</li>
+                        <li>Preparation of landings requested by the Marketing Department.</li>
+                        <li>Training and support for users in generating reports, correcting information, etc.</li>
+                        <li>Support as technical support, if necessary.</li>
+                        <li>Adjustments of company web pages, hosting management.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sectionExperienciaLaboral__card">
+                <figure class="sectionExperienciaLaboral__imagen">
+                    <img src="../assets/img/logo-hcjessica.png" alt="Company logo" class="sectionExperienciaLaboral--imagen_img">
+                </figure>
+                <div class="sectionExperienciaLaboral__info">
+                    <p class="sectionExperienciaLaboral--info_tiempo">06/2019 – 07/2020</p>
+                    <p class="sectionExperienciaLaboral--info_cargo">Freelance</p>
+                    <ul class="sectionExperienciaLaboral--info_tareas">
+                        <li>Web software development (PHP) and user training.</li>
+                        <li>Web pages with Wordpress/Prestashop: landings, online stores.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sectionExperienciaLaboral__card">
+                <figure class="sectionExperienciaLaboral__imagen">
+                    <img src="../assets/img/logo-tecnicaingenieros.jpg" alt="Company logo" class="sectionExperienciaLaboral--imagen_img">
+                </figure>
+                <div class="sectionExperienciaLaboral__info">
+                    <p class="sectionExperienciaLaboral--info_tiempo">03/2017 – 05/2019</p>
+                    <p class="sectionExperienciaLaboral--info_cargo">System Programmer</p>
+                    <p class="sectionExperienciaLaboral--info_empresa">Tecnica Ingenieros S.R.L., Lima – Peru.</p>
+                    <ul class="sectionExperienciaLaboral--info_tareas">
+                        <li>Participated in the digital transformation initiative in the organization through the development in PHP/Java and support of the intranet system (GENESIS).</li>
+                        <li>Propose new technological developments that help the company to generate development and productivity. Training and support for users in generating reports, correcting information, etc.</li>
+                        <li>Responsible for defining the architecture of the system to be developed in coordination and supervision of the immediate boss.</li>
+                    </ul>
+                </div>                
+            </div>
+            <div class="sectionExperienciaLaboral__card">
+                <figure class="sectionExperienciaLaboral__imagen">
+                    <img src="../assets/img/logo-multitron.jpg" alt="Company logo" class="sectionExperienciaLaboral--imagen_img">
+                </figure>             
+                <div class="sectionExperienciaLaboral__info">
+                    <p class="sectionExperienciaLaboral--info_tiempo">07/2016 – 02/2017</p>
+                    <p class="sectionExperienciaLaboral--info_cargo">Programmer Analyst</p>
+                    <p class="sectionExperienciaLaboral--info_empresa">Multitron S.A.C., Lima – Peru.</p>
+                    <ul class="sectionExperienciaLaboral--info_tareas">
+                        <li>Gathering of information on customer requirements for the development of a system/pilot or its update.</li>
+                        <li>PHP programming of web applications to carry out changes in existing systems or the creation of a new application.</li>
+                        <li>Review and ensure that adjusted changes to systems have been applied correctly.
+                        </li>
+                        <li>Sending emails or calls to clients in relation to quotes, budgets, communications of the application of the adjustments requested in their system.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sectionExperienciaLaboral__card">
+                <figure class="sectionExperienciaLaboral__imagen">
+                    <img src="../assets/img/logo-inei.png" alt="Company logo" class="sectionExperienciaLaboral--imagen_img">
+                </figure>             
+                <div class="sectionExperienciaLaboral__info">
+                    <p class="sectionExperienciaLaboral--info_tiempo">03/2016 – 07/2016</p>
+                    <p class="sectionExperienciaLaboral--info_cargo">System Assistant</p>
+                    <p class="sectionExperienciaLaboral--info_empresa">National Institute Of Statistics And Informatics, Lima – Peru.</p>
+                    <ul class="sectionExperienciaLaboral--info_tareas">
+                        <li>Preparation of Newsletters, etc.</li>
+                        <li>Development of research projects.</li>
+                        <li>Documentation as required by the institution.</li>
+                        <li>Perform functions with respect to the institution's computer equipment.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>        
+        <section class="sectionFormacionAcademica" id="sectionFormacionAcademica">
+            <h4 class="sectionFormacionAcademica__titulo">Academic Training</h4>
+            <div class="sectionFormacionAcademica__bloque">
+                <div class="sectionFormacionAcademica__full">
+                    <p>03/2022 - Currently</p>
+                    <p>Student</p>
+                    <p>ICPNA, Online.</p>
+                </div>
+                <div class="sectionFormacionAcademica__linea">
+                    <span class="sectionFormacionAcademica--linea_span"></span>
+                </div>
+                <div class="sectionFormacionAcademica__empty">
+                </div>
+            </div>
+            <p class="sectionFormacionAcademica__p">2022</p>
+            <div class="sectionFormacionAcademica__bloque">
+                <div class="sectionFormacionAcademica__empty">
+                </div>
+                <div class="sectionFormacionAcademica__linea">
+                    <span class="sectionFormacionAcademica--linea_span"></span>
+                </div>
+                <div class="sectionFormacionAcademica__full">
+                    <p>11/2018 - Currently</p>
+                    <p>Student</p>
+                    <p>Platzi, Online.</p>
+                </div>
+                <div class="sectionFormacionAcademica__linea">
+                    <span class="sectionFormacionAcademica--linea_span"></span>
+                </div>
+            </div>
+            <p class="sectionFormacionAcademica__p">2018</p>
+            <div class="sectionFormacionAcademica__bloque">
+                <div class="sectionFormacionAcademica__linea">
+                    <span class="sectionFormacionAcademica--linea_span"></span>
+                </div>
+                <div class="sectionFormacionAcademica__full">
+                    <p>04/2012 – 12/2016</p>
+                    <p>Systems engineer</p>
+                    <p>Cesar Vallejo University, Lima – Peru.</p>
+                </div>
+                <div class="sectionFormacionAcademica__linea">
+                    <span class="sectionFormacionAcademica--linea_span"></span>
+                </div>
+                <div class="sectionFormacionAcademica__empty">
+                </div>
+            </div>
+            <p class="sectionFormacionAcademica__p">2012</p>
+        </section>        
+        <section class="sectionHabilidades" id="sectionHabilidades">
+            <h4 class="sectionHabilidades__titulo">Skills</h4>
+            <h3 class="sectionHabilidades__subtitulo">Professionals:</h3>
+            <figure class="sectionHabilidades__profesionales">
+                
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-html.png" alt="Skill: HTML">
+                    <figcaption>HTML</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-css.png" alt="Skill: CSS">
+                    <figcaption>CSS</figcaption>                    
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-js.png" alt="Skill: JS">
+                    <figcaption>JS</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-reactjs.png" alt="Skill: REACT JS">
+                    <figcaption>REACT JS</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-php.png" alt="Skill: PHP">
+                    <figcaption>PHP</figcaption>                    
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-java.png" alt="Skill: JAVA">
+                    <figcaption>JAVA</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-python.png" alt="Skill: PYTHON">
+                    <figcaption>PYTHON</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-laravel.png" alt="Skill: LARAVEL">
+                    <figcaption>LARAVEL</figcaption>                    
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-codeigniter.png" alt="Skill: CODEIGNITER">
+                    <figcaption>CODEIGNITER</figcaption>                    
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-git.png" alt="Skill: GIT">
+                    <figcaption>GIT</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-sqlserver.png" alt="Skill: SQL">
+                    <figcaption>SQL Server</figcaption>                    
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-mysql-workbench.png" alt="Skill: MySQL">
+                    <figcaption>MySQL WORKBENCH</figcaption>                    
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-uml.png" alt="Skill: UML">
+                    <figcaption>UML</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-scrum.png" alt="Skill: SCRUM">
+                    <figcaption>SCRUM</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-wordpress.png" alt="Skill: WORDPRESS">
+                    <figcaption>WORDPRESS</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-photoshop.png" alt="Skill: Graphic design with PHOTOSHOP">
+                    <figcaption>PHOTOSHOP</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-illustrator.png" alt="Skill: Graphic design with ILLUSTRATOR">
+                    <figcaption>ILLUSTRATOR</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-camtasia.png" alt="Skill: Video editing with CAMTASIA">
+                    <figcaption>CAMTASIA</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-creacion-contenido.jpg" alt="Skill: CONTENT CREATION">
+                    <figcaption>CREACIÓN DE CONTENIDO</figcaption>
+                </div>
+                <div class="sectionHabilidades__profesionales-img">
+                    <img src="../assets/img/skill-logo-office.png" alt="Skill: OFFICE">
+                    <figcaption>OFFICE</figcaption>
+                </div>
+            </figure>
+            <h3 class="sectionHabilidades__subtitulo">Personal:</h3>
+            <div class="sectionHabilidades_personales">
+                <p>Proactivity</p>
+                <p>Creativity</p>
+                <p>Teamwork</p>
+                <p>Leadership</p>
+                <p>Commitment</p>
+                <p>Responsibility</p>
+                <p>Entrepreneurship</p>
+                <p>Autodidact</p>
+                <p>Self-organized</p>
+                <p>Motivation</p>
+                <p>Goal oriented</p>
+            </div>
+        </section>
+        <section class="sectionIdiomas" id="sectionIdiomas">
+            <h4 class="sectionIdiomas__titulo">Languages</h4>
+            <div class="bloqueIdioma">
+                <div class="bloqueIdioma1">
+                    <p class="bloqueIdioma1__nivel">Intermediate</p>
+                    <div class="bloqueIdioma1__barra"></div>
+                    <p class="bloqueIdioma1__idioma">English</p>
+                </div>
+                <div class="bloqueIdioma2">
+                    <p class="bloqueIdioma2__nivel">Native</p>
+                    <div class="bloqueIdioma2__barra"></div>
+                    <p class="bloqueIdioma2__idioma">Spanish</p>
+                </div>
+            </div>
+        </section>         
+        <section class="sectionSoftware" id="sectionSoftware">
+            <h4 class="sectionSoftware__titulo">Software</h4>
+            <figure class="sectionSoftware__software">
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-linux.png" alt="Software: LINUX">
+                    <figcaption>LINUX</figcaption>                    
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-windows.png" alt="Software: WINDOWS">
+                    <figcaption>WINDOWS</figcaption>                    
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-sqlserver.png" alt="Software: SQL">
+                    <figcaption>SQL SERVER</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-mysql-workbench.png" alt="Software: MySQL WORKBENCH">
+                    <figcaption>MySQL WORKBENCH</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-wampserver.png" alt="Software: WAMP">
+                    <figcaption>WAMP</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-xamp.png" alt="Software: XAMPP">
+                    <figcaption>XAMPP</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-eclipse.png" alt="Software: ECLIPSE">
+                    <figcaption>ECLIPSE</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-netbeans.png" alt="Software: NETBEANS">
+                    <figcaption>NETBEANS</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-visual-studio.png" alt="Software: VISUAL STUDIO">
+                    <figcaption>VISUAL STUDIO</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-pyscripter.png" alt="Software: PYSCRIPTER">
+                    <figcaption>PYSCRIPTER</figcaption>                    
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-android-studio.png" alt="Software: ANDROID STUDIO">
+                    <figcaption>ANDROID STUDIO</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-sublime-text.png" alt="Software: SUBLIME TEXT">
+                    <figcaption>SUBLIME TEXT</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-vsc.png" alt="Software: VISUAL STUDIO CODE">
+                    <figcaption>VISUAL STUDIO CODE</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-rational-rose.png" alt="Software: RATIONAL ROSE">
+                    <figcaption>RATIONAL ROSE</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-photoshop.png" alt="Software: PHOTOSHOP">
+                    <figcaption>PHOTOSHOP</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-illustrator.png" alt="Software: ILLUSTRATOR">
+                    <figcaption>ILLUSTRATOR</figcaption>
+                </div>
+                <div class="sectionSoftware__software-img">
+                    <img src="../assets/img/soft-logo-camtasia.png" alt="Software: CAMTASIA">
+                    <figcaption>CAMTASIA</figcaption>
+                </div>
+            </figure>
+        </section>               
+        <section class="sectionCertificados" id="sectionCertificados">
+            <h4 class="sectionCertificados__titulo">Certificates</h4>
+            <div class="sectionCertificados__card">
+                <figure>
+                    <img src="../assets/img/certificado-logo-platzi.png" alt="HTML and CSS Definitive Course Certificate obtained from Platzi" class="sectionCertificados--card_img">
+                </figure>
+                <div class="sectionCertificados--card_descripcion descripcion__certificado">
+                    <p class="descripcion--certificado_titulo">Course</p>
+                    <p class="descripcion--certificado_descripcion">HTML and CSS definitive course</p>
+                    <p class="descripcion--certificado_anio">Platzi, 2023.</p>
+                </div>
+            </div>
+            <div class="sectionCertificados__card">
+                <figure>
+                    <img src="../assets/img/certificado-logo-platzi.png" alt="Frontend developer course certificate obtained from Platzi" class="sectionCertificados--card_img">
+                </figure>
+                <div class="sectionCertificados--card_descripcion descripcion__certificado">
+                    <p class="descripcion--certificado_titulo">Course</p>
+                    <p class="descripcion--certificado_descripcion">Frontend developer course</p>
+                    <p class="descripcion--certificado_anio">Platzi, 2022.</p>
+                </div>
+            </div>
+            <div class="sectionCertificados__card">
+                <figure>
+                    <img src="../assets/img/certificado-logo-platzi.png" alt="Introductory Laravel course certificate obtained from Platzi" class="sectionCertificados--card_img">
+                </figure>
+                <div class="sectionCertificados--card_descripcion descripcion__certificado">
+                    <p class="descripcion--certificado_titulo">Course</p>
+                    <p class="descripcion--certificado_descripcion">Introductory Laravel course</p>
+                    <p class="descripcion--certificado_anio">Platzi, 2022.</p>
+                </div>
+            </div>
+            <div class="sectionCertificados__card">
+                <figure>
+                    <img src="../assets/img/certificado-logo-certiprof.png" alt="Remote work and virtual collaboration certificate obtained from Certiprof" class="sectionCertificados--card_img">
+                </figure>
+                <div class="sectionCertificados--card_descripcion descripcion__certificado">
+                    <p class="descripcion--certificado_titulo">Certificate</p>
+                    <p class="descripcion--certificado_descripcion">Remote work and virtual colaboration</p>
+                    <p class="descripcion--certificado_anio">Certiprof, 2020.</p>
+                </div>
+            </div>
+            <div class="sectionCertificados__card">
+                <figure>
+                    <img src="../assets/img/certificado-logo-platzi.png" alt="Git and Github Professional Course Certificate obtained from Platzi" class="sectionCertificados--card_img">
+                </figure>
+                <div class="sectionCertificados--card_descripcion descripcion__certificado">
+                    <p class="descripcion--certificado_titulo">Course</p>
+                    <p class="descripcion--certificado_descripcion">Git and Github professional course</p>
+                    <p class="descripcion--certificado_anio">Platzi, 2020.</p>
+                </div>
+            </div>
+            <div class="sectionCertificados__card">
+                <figure>
+                    <img src="../assets/img/certificado-logo-certiprof.png" alt="Scrum Master Professional Certificate (SMPC) obtained from Certiprof" class="sectionCertificados--card_img">
+                </figure>
+                <div class="sectionCertificados--card_descripcion descripcion__certificado">
+                    <p class="descripcion--certificado_titulo">Certificate</p>
+                    <p class="descripcion--certificado_descripcion">"Scrum Master Professional Certificate (SMPC)</p>
+                    <p class="descripcion--certificado_anio">Certiprof, Lima - Peru, 2019.</p>
+                </div>
+            </div>
+            <div class="sectionCertificados__card">
+                <figure>
+                    <img src="../assets/img/certificado-logo-certiprof.png" alt="Scrum Foundation Professional Certificate (SFPC) obtained from Certiprof" class="sectionCertificados--card_img">
+                </figure>
+                <div class="sectionCertificados--card_descripcion descripcion__certificado">
+                    <p class="descripcion--certificado_titulo">Certificate</p>
+                    <p class="descripcion--certificado_descripcion">Scrum Foundation Professional Certificate (SFPC)</p>
+                    <p class="descripcion--certificado_anio">Certiprof, Lima - Peru, 2019.</p>
+                </div>                
+            </div>            
+            <div class="sectionCertificados__card">
+                <figure>
+                    <img src="../assets/img/certificado-logo-uni.png" alt="PHP course certificate obtained from the National University of Engineering" class="sectionCertificados--card_img">
+                </figure>
+                <div class="sectionCertificados--card_descripcion descripcion__certificado">
+                    <p class="descripcion--certificado_titulo">Course</p>
+                    <p class="descripcion--certificado_descripcion">Course PHP</p>
+                    <p class="descripcion--certificado_anio">National University Of Engineering, Lima - Peru, 2018.</p>
+                </div>
+            </div>
+        </section>        
+        <section class="sectionPosts" id="sectionPosts">
+            <h4 class="sectionPosts__titulo">Publications</h4>
+            <div class="sectionPosts__cards">
+                <div class="postcard">    
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CcI64has2kr/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CcI64has2kr/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CcI64has2kr/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Jessica | Software Developer (@hcjessica31)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+                <div class="postcard"> 
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CoBBG0JMw5g/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CoBBG0JMw5g/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CoBBG0JMw5g/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Jessica | Software Developer (@hcjessica31)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>                 
+                </div>
+                <div class="postcard">     
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CqgGVaetN_i/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CqgGVaetN_i/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CqgGVaetN_i/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Jessica | Software Developer (@hcjessica31)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>               
+                </div>
+            </div>
+        </section>
+        <!--<section class="sectionRecomendaciones" id="sectionRecomendaciones">
+            <h4 class="sectionRecomendaciones__titulo">Recomendaciones</h4>
+            <div class="recomendacionCard">
+                <blockquote class="recomendacionCard__cita">
+                    "Es una excelente profesional, desarrolla muy bien sus actividades y aporta en nuevas estrategias para la mejora en los sistemas."
+                </blockquote>
+                <p class="recomendacionCard__author">Cervantes Gutierrez, Alberto</p>
+            </div>
+            <div class="recomendacionCard">
+                <blockquote class="recomendacionCard__cita">
+                    "Es una excelente profesional, desarrolla muy bien sus actividades y aporta en nuevas estrategias para la mejora en los sistemas."
+                </blockquote>
+                <p class="recomendacionCard__author">Cervantes Gutierrez, Alberto</p>
+            </div>
+        </section>-->
+        <section class="sectionContacto" id="sectionContacto">
+            <h4 class="sectionContacto__titulo">Contact</h4>
+            <div class="bloque__contactame">
+                <p class="bloque--contactame_texto">Do you want to contact me?</p>
+                <button class="bloque--contactame_btn" onclick="abrirFormulario();">Contact 
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 96 960 960" width="38"><path d="M140 896q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140 371v465h680V371L480 594Zm0-60 336-218H145l335 218ZM140 371v-55 520-465Z"/></svg>
+                    </span>
+                </button>
+            </div>
+        </section>
+    </main>    
+   <footer class="footer">
+        <p class="footer__texto">Copyright © 2023 HC Jessica. All rights reserved.</p>
+    </footer>
+	<script type="text/javascript" src="../assets/libraries/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/index.js"></script>
+    <script type="text/javascript">    	
+    	$(document).ready(function(){
+    			
+ 		});
+    </script>
+</body>
+</html>
